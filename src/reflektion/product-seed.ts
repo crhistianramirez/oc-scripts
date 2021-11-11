@@ -164,9 +164,33 @@ async function postProducts(productFeed: any[], catalogID: string, imageUrlPrefi
                 Images: [
                     {
                         Url: imageUrlPrefix + row.ImageUrl,
-                        ThumbnailUrl: imageUrlPrefix + row.Thumbnail
+                        ThumbnailUrl: imageUrlPrefix + row.Thumbnail,
+                        Tags: null
                     }
-                ]
+                ],
+                Status: 'Draft',
+                IsResale: false,
+                IntegrationData: null,
+                HasVariants: false,
+                Note: '',
+                Tax: {
+                    Category: 'P0000000',
+                    Code: 'PC030156',
+                    Description: 'Clothing And Related Products (Business-To-Business)-Work clothes (other)'
+                },
+                UnitOfMeasure: {
+                    Qty: 1,
+                    Unit: 'Per'
+                },
+                ProductType: 'Standard',
+                SizeTier: 'D',
+                Accessorials: null,
+                Currency: 'USD',
+                ArtworkRequired: false,
+                PromotionEligible: true,
+                FreeShipping: false,
+                FreeShippingMessage: 'Free Shipping',
+                Documents: null
             }
         }
 
